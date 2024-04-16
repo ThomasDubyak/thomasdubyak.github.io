@@ -20,7 +20,7 @@
 }
 
 .bgimg1 {
-    background-image: url("./images/couple.jpg");
+    background-image: url("./images/Redwoods Photo.png");
     min-height: 100vh;
 }
 
@@ -74,9 +74,8 @@ html, body {
 
 body {
     font-family: Arial, serif;
-    overflow: scroll;
-
-    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+    overflow-x: hidden;
     background: #4e5e47;
 }
 
