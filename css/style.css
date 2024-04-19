@@ -81,7 +81,7 @@ p {
         inset: calc(-1*var(--b));
         border: inherit;
         border-radius: var(--r);
-        background: linear-gradient(#3a5719, #4d8322, #b39371) border-box;
+        background: linear-gradient(#ffffff, #3a5719, #b39371) border-box;
         --corner:
                 conic-gradient(from -90deg at var(--c) var(--c), red 25%, #0000 0)
                 0 0/ calc(100% - var(--c))  calc(100% - var(--c)) border-box;
@@ -138,7 +138,7 @@ p {
     border-left: 0;
     border-style: solid;
     /* 	border-image: linear-gradient(to bottom, #ccc, #555 66%, #181818) 1 100%; */
-    border-image: linear-gradient(to bottom, #4e5e47, #779069, #4e5e47) 1 100%;
+    border-image: linear-gradient(to bottom, #a3a3a3, #edaa4e, #8a8a8a) 1 100%;
 }
 .box:last-child {
     border-right: 2px;
