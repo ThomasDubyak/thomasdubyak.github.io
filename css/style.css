@@ -33,13 +33,13 @@ p {
 
 }
 
-.jarallax:after {
+.border{
     content:"";
     background: -webkit-linear-gradient(left, rgb(181, 85, 43) 0%, rgb(149, 87, 44) 12%, rgb(228, 147, 76) 47%, rgb(115, 70, 17) 100%);
     display: block;
     height:2px;
-    width: 500px;
-    position: absolute;
+    width: 100vw;
+    position: relative;
     bottom: 0;
 }
 
