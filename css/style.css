@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:200,400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:200,300,400,400i,700");
+
 body, html {
     height: 100%;
 }
@@ -9,9 +12,21 @@ body {
 }
 
 div {
+    padding:0;
 }
 
-jarallax {
+p {
+    padding:0;
+    margin:0;
+    font-family: Lato, sans-serif;
+    font-weight: bold;
+}
+
+.content {
+
+}
+
+.jarallax {
     position:relative;
     z-index:0;
     opacity:0.9;
@@ -26,4 +41,104 @@ jarallax {
     width:100%;
     height:100%;
     z-index:-1;
+}
+
+@font-face {
+    font-family: 'Darling';
+    src: url('fonts/Darling.woff2') format('woff2'),
+    url('fonts/Darling.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Content div styles */
+.content {
+    --b: .5em; /* border width */
+    --c: 3em; /* corner size */
+    --r: 2em; /* corner rounding */
+    position: relative;
+    margin: 1em auto;
+    border: solid var(--b) transparent;
+    padding: 1em;
+    max-width: 23em;
+    font: 1.25em ubuntu, sans-serif;
+
+    &::before {
+        position: absolute;
+        z-index: -1;
+        inset: calc(-1*var(--b));
+        border: inherit;
+        border-radius: var(--r);
+        background: linear-gradient(#3a5719, #4d8322, #b39371) border-box;
+        --corner:
+                conic-gradient(from -90deg at var(--c) var(--c), red 25%, #0000 0)
+                0 0/ calc(100% - var(--c))  calc(100% - var(--c)) border-box;
+        --inner: conic-gradient(red 0 0) padding-box;
+        -webkit-mask: var(--corner), var(--inner);
+        -webkit-mask-composite: source-out;
+        mask: var(--corner) subtract, var(--inner);
+        content: ''
+    }
+}
+
+/* Container Styles */
+
+.container {
+    padding: 2vw;
+}
+.container h1 {
+    font-size: 2.5em;
+    /* 	margin-bottom: 2em; */
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+    font-family: Darling, serif;
+    font-weight: 200;
+}
+.container h1::before {
+    content: '─';
+    margin-right: 0.6em;
+    color: #686868;
+}
+.container h1::after {
+    content: '─';
+    margin-left: 0.6em;
+    color: #686868;
+}
+
+.boxes {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.boxes:last-child {
+    margin-top: 30px;
+}
+
+.box {
+    width: 30vw;
+    font-size: 1em;
+    line-height: 1.5em;
+    font-weight: 200;
+    padding: 0 4vw 4vw;
+    border-right: 2px;
+    border-left: 0;
+    border-style: solid;
+    /* 	border-image: linear-gradient(to bottom, #ccc, #555 66%, #181818) 1 100%; */
+    border-image: linear-gradient(to bottom, #4e5e47, #779069, #4e5e47) 1 100%;
+}
+.box:last-child {
+    border-right: 2px;
+}
+
+.box h2 {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 200;
+    line-height: 1em;
+    color: #f2f2f2;
 }
