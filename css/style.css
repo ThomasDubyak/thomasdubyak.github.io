@@ -41,6 +41,8 @@ p {
     width: 100vw;
     position: relative;
     bottom: 0;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .jarallax > .jarallax-img {
@@ -96,13 +98,13 @@ p {
 /* Container Styles */
 
 .container {
-    padding: 2vw;
+    padding: 1vw;
 }
 .container h1 {
     font-size: 2.5em;
     /* 	margin-bottom: 2em; */
     text-transform: uppercase;
-    letter-spacing: 10px;
+    letter-spacing: 6px;
     text-align: center;
     font-family: Darling, serif;
     font-weight: 200;
@@ -129,13 +131,13 @@ p {
 }
 
 .box {
-    width: 30vw;
-    font-size: 1em;
+    width: 80vw;
+    font-size: 1.5em;
     line-height: 1.5em;
     font-weight: 200;
-    padding: 0 4vw 4vw;
-    border-right: 2px;
-    border-left: 0;
+    padding: 0 5vw 5vw;
+    border-right: 0;
+    border-left: 2px;
     border-style: solid;
     /* 	border-image: linear-gradient(to bottom, #ccc, #555 66%, #181818) 1 100%; */
     border-image: linear-gradient(to bottom, #a3a3a3, #edaa4e, #8a8a8a) 1 100%;
