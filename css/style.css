@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:200,400,400i,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:200,300,400,400i,700");
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=WindSong:wght@400;500&display=swap');
+
 
 body, html {
     height: 100%;
+    width: 100%;
 }
 
 body {
@@ -36,13 +40,12 @@ p {
 .border{
     content:"";
     background: -webkit-linear-gradient(left, rgb(181, 85, 43) 0%, rgb(149, 87, 44) 12%, rgb(228, 147, 76) 47%, rgb(115, 70, 17) 100%);
-    display: block;
+    box-sizing:inherit;
     height:2px;
-    width: 100vw;
+    width: 100%;
     position: relative;
+    align-items: center;
     bottom: 0;
-    margin-left:auto;
-    margin-right:auto;
 }
 
 .jarallax > .jarallax-img {
@@ -101,23 +104,60 @@ p {
     padding: 1vw;
 }
 .container h1 {
-    font-size: 2.5em;
-    /* 	margin-bottom: 2em; */
+    font-size: 3em;
+    margin-bottom: 0.1em;
+    margin-top: 0.3em;
     text-transform: uppercase;
+    font-weight: 1000;
     letter-spacing: 6px;
     text-align: center;
-    font-family: Darling, serif;
-    font-weight: 200;
+    font-family: Cormorant Infant, serif;
+    color: #2c3c23;
 }
+
+.box h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    text-transform: none;
+    letter-spacing: 4px;
+    font-weight: 800;
+    font-family: Cormorant Infant, serif;
+    line-height: 1em;
+    color: #f2f2f2;
+}
+
+.box p {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    text-transform: none;
+    letter-spacing: 4px;
+    font-weight: 600;
+    font-family: Windsong, serif;
+    line-height: 1em;
+    color: #2c3c23;
+}
+
+.box p.accent {
+    font-size: 1em;
+    margin-bottom: 1em;
+    text-transform: none;
+    letter-spacing: 4px;
+    font-weight: 500;
+    font-family: Cormorant Infant, serif;
+    line-height: 1em;
+    color: #2c3c23;
+}
+
 .container h1::before {
     content: '─';
     margin-right: 0.6em;
-    color: #686868;
+    color: #95572c;
 }
 .container h1::after {
     content: '─';
     margin-left: 0.6em;
-    color: #686868;
+    color: #95572c;
 }
 
 .boxes {
@@ -133,7 +173,7 @@ p {
 .box {
     width: 80vw;
     font-size: 1.5em;
-    line-height: 1.5em;
+    line-height: 1em;
     font-weight: 200;
     padding: 0 5vw 5vw;
     border-right: 0;
@@ -146,12 +186,3 @@ p {
     border-right: 2px;
 }
 
-.box h2 {
-    font-size: 1.3em;
-    margin-bottom: 1em;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-weight: 200;
-    line-height: 1em;
-    color: #f2f2f2;
-}
