@@ -107,7 +107,19 @@ p {
     height:2px;
     width: 100%;
     position: relative;
-    align-items: center;
+    justify-self:center;
+    bottom: 0;
+}
+
+.border-small{
+    content:"";
+    background: -webkit-linear-gradient(left, rgb(181, 85, 43) 0%, rgb(149, 87, 44) 12%, rgb(228, 147, 76) 47%, rgb(115, 70, 17) 100%);
+    box-sizing:inherit;
+    height:2px;
+    width: 100%;
+    position: relative;
+    left:8vw;
+    justify-self:center;
     bottom: 0;
 }
 
