@@ -167,7 +167,7 @@ p {
     padding: 1vw;
 }
 .container h1 {
-    font-size: 3em;
+    font-size: 10vw;
     margin-bottom: 0.1em;
     margin-top: 0.3em;
     text-transform: uppercase;
@@ -179,7 +179,7 @@ p {
 }
 
 .box h2 {
-    font-size: 2em;
+    font-size: 8vw;
     margin-bottom: 0.5em;
     margin-top: 0.5em;
     text-transform: none;
@@ -191,7 +191,7 @@ p {
 }
 
 .box p {
-    font-size: 1.3em;
+    font-size: 6vw;
     margin-bottom: 1em;
     text-transform: none;
     letter-spacing: 4px;
@@ -202,7 +202,7 @@ p {
 }
 
 .box p.accent {
-    font-size: 1em;
+    font-size: 6vw;
     margin-bottom: 1em;
     text-transform: none;
     letter-spacing: 4px;
@@ -212,7 +212,7 @@ p {
     color: #2c3c23;
 }
 
-.container h1::before {
+/*.container h1::before {
     content: '─';
     margin-right: 0.6em;
     color: #95572c;
@@ -222,7 +222,7 @@ p {
     margin-left: 0.6em;
     color: #95572c;
 }
-
+*/
 .boxes {
     margin-top: 30px;
     display: flex;
