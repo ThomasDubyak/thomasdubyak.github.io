@@ -93,10 +93,18 @@ p {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'BlackGold Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('BlackGold Regular'), url('../fonts/BlackGold_Personal_use.woff') format('woff');
+}
+
 .jarallax {
     position:relative;
     z-index:0;
     opacity:0.9;
+    width:100%;
 }
 
 a .a2 {
@@ -131,7 +139,7 @@ a:hover::before {
     box-sizing:inherit;
     height:2px;
     width: 100%;
-    position: relative;
+    position: absolute;
     justify-self:center;
     bottom: 0;
 }
@@ -159,17 +167,6 @@ a:hover::before {
     z-index:-1;
 }
 
-@font-face {
-    font-family: 'Darling';
-    src: url('fonts/Darling.woff2') format('woff2'),
-    url('fonts/Darling.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-
 /* Container Styles */
 
 .container {
@@ -183,7 +180,7 @@ a:hover::before {
     font-weight: 1000;
     letter-spacing: 6px;
     text-align: center;
-    font-family: Cormorant Infant, serif;
+    font-family: BlackGold Regular, serif;
     color: #2c3c23;
 }
 
@@ -194,9 +191,22 @@ a:hover::before {
     text-transform: none;
     letter-spacing: 4px;
     font-weight: 800;
-    font-family: Cormorant Infant, serif;
+    font-family: Windsong, serif;
     line-height: 1em;
     color: #f2f2f2;
+}
+
+.box2 h3 {
+    font-size: 8vw;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    text-transform: none;
+    letter-spacing: 4px;
+    font-weight: 800;
+    font-family: BlackGold Regular, serif;
+    line-height: 1em;
+    color: #f2f2f2;
+    text-align: center;
 }
 
 .box p {
@@ -204,9 +214,9 @@ a:hover::before {
     margin-top: 1em;
     margin-bottom: 0;
     text-transform: none;
-    letter-spacing: 4px;
-    font-weight: 600;
-    font-family: Windsong, serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-family: Helvetica, serif;
     line-height: 1em;
     color: #2c3c23;
 }
@@ -229,62 +239,50 @@ a:hover::before {
     margin-bottom: 0;
     text-transform: none;
     letter-spacing: 4px;
-    font-weight: 600;
-    font-family: windsong, serif;
+    font-weight: 400;
+    font-family: Helvetica, serif;
     line-height: 1em;
     color: #2c3c23;
-
-    white-space: nowrap;
 }
 
 .box p.footer {
-    font-size: clamp(1rem, -0.875rem + 8.333vw, 3.5rem);
+    font-size: clamp(1rem, -0.875rem + 7vw, 3.5rem);
     margin-top: .5em;
     margin-bottom: 0;
     text-transform: none;
-    letter-spacing: 4px;
+    letter-spacing: 1px;
     font-weight: 600;
-    font-family: windsong, serif;
+    font-family: BlackGold Regular, serif;
     line-height: 1em;
     color: #2c3c23;
-
-    white-space: nowrap;
-}
-
-/*.container h1::before {
-    content: '─';
-    margin-right: 0.6em;
-    color: #95572c;
-}
-.container h1::after {
-    content: '─';
-    margin-left: 0.6em;
-    color: #95572c;
-}
-*/
-.boxes {
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.boxes:last-child {
-    margin-top: 30px;
+    text-align: center;
 }
 
 .box {
-    width: 80vw;
     font-size: 1.5em;
     line-height: 1em;
     font-weight: 200;
-    padding: 0 5vw 5vw 1vw;
+    padding: 0 5vw 3vw 1vw;
     border-right: 0;
     border-left: 2px;
     border-style: solid;
     /* 	border-image: linear-gradient(to bottom, #ccc, #555 66%, #181818) 1 100%; */
     border-image: linear-gradient(to bottom, #a3a3a3, #edaa4e, #8a8a8a) 1 100%;
 }
-.box:last-child {
-    border-right: 2px;
+
+.box2 {
+    font-size: 1.5em;
+    line-height: 1em;
+    font-weight: 200;
+    border-right: 0;
+    border-left: 2px;
+    border-style: solid;
+    /* 	border-image: linear-gradient(to bottom, #ccc, #555 66%, #181818) 1 100%; */
+    border-image: linear-gradient(to bottom, #a3a3a3, #edaa4e, #8a8a8a) 1 100%;
+    text-align: center;
 }
 
+img.icon{
+    height: 20%;
+    width: 20%;
+}
