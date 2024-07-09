@@ -195,7 +195,7 @@ a:hover::before {
     border-right: 2px;
     border-style: solid;
     /* 	border-image: linear-gradient(to bottom, #ccc, #555 66%, #181818) 1 100%; */
-    border-image: linear-gradient(to bottom, #734611, #edaa4e, #95572c) 1 100%;
+    border-image: linear-gradient(to bottom, #95572c, #edaa4e, #95572c) 1 100%;
     text-align: center;
 }
 
@@ -247,7 +247,7 @@ p {
     margin-bottom: 0;
     text-transform: none;
     letter-spacing: 1px;
-    font-weight: 400;
+    font-weight: 200;
     font-family: Helvetica, serif;
     line-height: 1em;
     color: #2c3c23;
