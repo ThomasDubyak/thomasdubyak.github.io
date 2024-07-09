@@ -100,7 +100,12 @@ p {
     src: local('BlackGold Regular'), url('../fonts/BlackGold_Personal_use.woff') format('woff');
 }
 
-
+.jarallax {
+    position:relative;
+    z-index:0;
+    opacity:0.9;
+    width:100%;
+}
 
 a .a2 {
 
@@ -151,28 +156,6 @@ a:hover::before {
     bottom: 0;
 }
 
-
-
-/* Container Styles */
-.jarallax-wrapper-tall {
-    min-height:100vh;
-    display:flex;
-    justify-content: center;
-}
-
-.jarallax-wrapper-short {
-    min-height:30vh;
-    display:flex;
-    justify-content: center;
-}
-
-.jarallax {
-    position:relative;
-    z-index:0;
-    opacity:0.9;
-    width:100%;
-}
-
 .jarallax > .jarallax-img {
     position:absolute;
     object-fit: cover;
@@ -184,30 +167,15 @@ a:hover::before {
     z-index:-1;
 }
 
-.content {
-    width:100vw;
-    max-width:1366px;
-    margin: auto;
+/* Container Styles */
 
-    border-top:0;
-    border-bottom:0;
-    border-left: 2px;
-    border-right: 2px;
-    border-style: solid;
-    /* 	border-image: linear-gradient(to bottom, #ccc, #555 66%, #181818) 1 100%; */
-    border-image: linear-gradient(to bottom, #734611, #edaa4e, #95572c) 1 100%;
-    text-align: center;
-}
-
-.wrapper {
+.container {
     padding: 1vw;
-    display:grid;
 }
-
-h1 {
-    font-size: clamp(1rem, -0.875rem + 7vw, 8.5rem);
+.container h1 {
+    font-size: 10vw;
     margin-bottom: 0.1em;
-    margin-top: 0.75em;
+    margin-top: 0.3em;
     text-transform: uppercase;
     font-weight: 1000;
     letter-spacing: 6px;
@@ -216,8 +184,8 @@ h1 {
     color: #2c3c23;
 }
 
-h2 {
-    font-size: clamp(1rem, -0.875rem + 7vw, 6rem);
+.box h2 {
+    font-size: 8vw;
     margin-bottom: 0.5em;
     margin-top: 0.5em;
     text-transform: none;
@@ -228,8 +196,8 @@ h2 {
     color: #f2f2f2;
 }
 
-h3 {
-    font-size: clamp(1rem, -0.875rem + 8vw, 10rem);
+.box2 h3 {
+    font-size: 8vw;
     margin-bottom: 0.5em;
     margin-top: 0.5em;
     text-transform: none;
@@ -241,8 +209,8 @@ h3 {
     text-align: center;
 }
 
-p {
-    font-size: clamp(1rem, -0.875rem + 5vw, 4rem);
+.box p {
+    font-size: 6vw;
     margin-top: 1em;
     margin-bottom: 0;
     text-transform: none;
@@ -253,8 +221,8 @@ p {
     color: #2c3c23;
 }
 
-p.accent {
-    font-size: clamp(1rem, -0.875rem + 3vw, 3rem);
+.box p.accent {
+    font-size: 6vw;
     margin-top: 1em;
     margin-bottom: 0;
     text-transform: none;
@@ -265,8 +233,8 @@ p.accent {
     color: #2c3c23;
 }
 
-p.small {
-    font-size: clamp(1rem, -0.875rem + 5vw, 3rem);
+.box p.small {
+    font-size: 5.5vw;
     margin-top: 1em;
     margin-bottom: 0;
     text-transform: none;
@@ -277,8 +245,8 @@ p.small {
     color: #2c3c23;
 }
 
-p.footer {
-    font-size: clamp(1rem, -0.875rem + 5vw, 3.5rem);
+.box p.footer {
+    font-size: clamp(1rem, -0.875rem + 7vw, 3.5rem);
     margin-top: .5em;
     margin-bottom: 0;
     text-transform: none;
@@ -294,56 +262,27 @@ p.footer {
     font-size: 1.5em;
     line-height: 1em;
     font-weight: 200;
+    padding: 0 5vw 3vw 1vw;
+    border-right: 0;
+    border-left: 2px;
+    border-style: solid;
+    /* 	border-image: linear-gradient(to bottom, #ccc, #555 66%, #181818) 1 100%; */
+    border-image: linear-gradient(to bottom, #a3a3a3, #edaa4e, #8a8a8a) 1 100%;
 }
 
 .box2 {
     font-size: 1.5em;
     line-height: 1em;
     font-weight: 200;
-    text-align: left;
-    padding: 1vw 5vw 3vw 1vw;
-    margin-left: 1em;
-}
-
-.box3 {
-    font-size: 1.5em;
-    line-height: 1em;
-    font-weight: 200;
-    text-align: left;
-    padding: 1vw 5vw 3vw 1vw;
-    margin-left: 1em;
+    border-right: 0;
+    border-left: 2px;
+    border-style: solid;
+    /* 	border-image: linear-gradient(to bottom, #ccc, #555 66%, #181818) 1 100%; */
+    border-image: linear-gradient(to bottom, #a3a3a3, #edaa4e, #8a8a8a) 1 100%;
+    text-align: center;
 }
 
 img.icon{
+    height: 20%;
     width: 20%;
-}
-
-
-@media (min-width: 786px)  {
-
-    .wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.25fr .25fr;
-        gap: 0px 0px;
-        grid-template-areas:
-            "box box"
-            "box2 box3";
-    }
-
-    .box { grid-area: box; }
-    .box2 { grid-area: box2; }
-    .box3 { grid-area: box3; }
-
-    img.icon{
-        width: 70%;
-    }
-
-    .jarallax-wrapper-tall {
-        height:100vh;
-    }
-
-    .jarallax-wrapper-short {
-        height:50vh;
-    }
 }
