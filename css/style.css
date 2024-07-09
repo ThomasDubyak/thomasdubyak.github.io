@@ -94,10 +94,10 @@ p {
 }
 
 @font-face {
-    font-family: 'BlackGold Regular';
+    font-family: 'BlackGold_Regular';
     font-style: normal;
     font-weight: normal;
-    src: url('../fonts/BlackGold_Personal_use.woff') format('woff');
+    src: url('/fonts/BlackGold_Personal_use.woff') format('woff');
 }
 
 
@@ -212,7 +212,7 @@ h1 {
     font-weight: 1000;
     letter-spacing: 6px;
     text-align: center;
-    font-family: BlackGold Regular, serif;
+    font-family: BlackGold_Regular, serif;
     color: #2c3c23;
 }
 
@@ -235,7 +235,7 @@ h3 {
     text-transform: none;
     letter-spacing: 4px;
     font-weight: 1000;
-    font-family: BlackGold Regular, serif;
+    font-family: BlackGold_Regular, serif;
     line-height: 1em;
     color: #f2f2f2;
     text-align: center;
@@ -284,7 +284,7 @@ p.footer {
     text-transform: none;
     letter-spacing: 1px;
     font-weight: 600;
-    font-family: BlackGold Regular, serif;
+    font-family: BlackGold_Regular, serif;
     line-height: 1em;
     color: #2c3c23;
     text-align: center;
