@@ -97,7 +97,7 @@ p {
     font-family: 'BlackGold Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('BlackGold Regular'), url('../fonts/BlackGold_Personal_use.woff') format('woff');
+    src: url('../fonts/BlackGold_Personal_use.woff') format('woff');
 }
 
 
@@ -234,7 +234,7 @@ h3 {
     margin-top: 0.5em;
     text-transform: none;
     letter-spacing: 4px;
-    font-weight: 800;
+    font-weight: 1000;
     font-family: BlackGold Regular, serif;
     line-height: 1em;
     color: #f2f2f2;
