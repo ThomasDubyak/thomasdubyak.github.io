@@ -279,7 +279,7 @@ p.small {
 p.footer {
     font-size: clamp(1rem, -0.875rem + 5vw, 3.5rem);
     margin-top: .5em;
-    margin-bottom: 0;
+    margin-bottom: .3em;
     text-transform: none;
     letter-spacing: 1px;
     font-weight: 600;
@@ -330,6 +330,12 @@ img.down-arrow{
     max-height: 150px;
     top: 70%;
     max-width: 150px;
+}
+
+img.badge{
+    width:15%;
+    padding:10px;
+    max-width: 300px;
 }
 
 @media (min-width: 786px)  {
