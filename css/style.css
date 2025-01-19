@@ -198,6 +198,12 @@ a:hover::before {
     text-align: center;
 }
 
+#googleForm {
+    /*margin-left: auto;/*
+    /*margin-right: auto;*/
+    text-align: center;
+}
+
 .wrapper {
     padding: 1vw;
     display:grid;
@@ -313,6 +319,15 @@ p.footer {
     margin-left: 1em;
 }
 
+.box4 {
+    font-size: 1.5em;
+    line-height: 1em;
+    font-weight: 200;
+    text-align: left;
+    padding: 1vw 5vw 3vw 1vw;
+    margin-left: 1em;
+}
+
 img.icon{
     width: 20%;
 }
@@ -343,16 +358,18 @@ img.badge{
     .wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.25fr .25fr;
+        grid-template-rows: 0.25fr .25fr .25fr;
         gap: 0px 0px;
         grid-template-areas:
             "box box"
-            "box2 box3";
+            "box2 box3"
+            "box4 box4";
     }
 
     .box { grid-area: box; }
     .box2 { grid-area: box2; }
     .box3 { grid-area: box3; }
+    .box4 { grid-area: box4; }
 
     img.icon{
         width: 70%;
@@ -374,16 +391,18 @@ and (orientation: landscape) {
     .wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.25fr .25fr;
+        grid-template-rows: 0.25fr .25fr .25fr;
         gap: 0px 0px;
         grid-template-areas:
             "box box"
-            "box2 box3";
+            "box2 box3"
+            "box4 box4";
     }
 
     .box { grid-area: box; }
     .box2 { grid-area: box2; }
     .box3 { grid-area: box3; }
+    .box4 { grid-area: box4; }
 
     img.icon{
         width: 70%;
