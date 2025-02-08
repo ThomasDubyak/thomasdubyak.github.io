@@ -22,7 +22,7 @@ p {
 }
 
 .cormorant-infant-light {
-    font-family: "Cormorant Infant", serif;
+    font-family: ""Meow Script"", serif;
     font-weight: 300;
     font-style: normal;
 }
@@ -93,6 +93,11 @@ p {
     font-style: normal;
 }
 
+.bonheur-royale-regular {
+    font-family: "Bonheur Royale", serif;
+    font-weight: 400;
+    font-style: normal;
+}
 @font-face {
     font-family: 'BlackGold_Regular';
     font-style: normal;
@@ -240,13 +245,13 @@ h1 {
 }
 
 h2 {
-    font-size: clamp(1rem, -0.875rem + 7vw, 6rem);
+    font-size: clamp(1rem, -0.875rem + 8vw, 8rem);
     margin-bottom: 0.5em;
     margin-top: 0.5em;
     text-transform: none;
     letter-spacing: 4px;
-    font-weight: 800;
-    font-family: Windsong, serif;
+    font-weight: 1200;
+    font-family: "Bonheur Royale", serif;
     line-height: 1em;
     color: #f2f2f2;
 }
@@ -283,7 +288,7 @@ p.accent {
     text-transform: none;
     letter-spacing: 4px;
     font-weight: 700;
-    font-family: Cormorant Infant, serif;
+    font-family: "Meow Script", serif;
     line-height: 1em;
     color: #2c3c23;
 }
@@ -320,6 +325,7 @@ p.footer {
 
 .wrapper {
     padding: 1vw;
+    grid-gap: 1vw;
     display:grid;
 }
 
@@ -377,20 +383,20 @@ p.footer {
 }
 
 .box1 {
-    margin: 2vw 1vw 2vw 1vw;
+    margin: 0;
 }
 
 .box2 {
-    margin: 2vw 1vw 2vw 1vw;
+    margin: 0;
 }
 
 .box3 {
-    margin: 2vw 1vw 2vw 1vw;
+    margin: 0;
 }
 
 .box4 {
     text-align: center;
-    margin: 2vw 1vw 2vw 1vw;
+    margin: 0;
 }
 
 @media (min-width: 768px)  {
@@ -399,7 +405,7 @@ p.footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.25fr .25fr .25fr;
-        gap: 0px 0px;
+        grid-gap: .5em;
         grid-template-areas:
             "box1 box1"
             "box2 box3"
@@ -483,7 +489,7 @@ and (orientation: landscape) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.25fr .25fr .25fr;
-        gap: 0px 0px;
+        grid-gap: .5em;
         grid-template-areas:
             "box1 box1"
             "box2 box3"
