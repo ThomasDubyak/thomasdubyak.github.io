@@ -16,15 +16,8 @@ div {
     padding:0;
 }
 
-p {
-    padding:0;
-    margin:auto;
-    font-family: Lato, sans-serif;
-    font-weight: bold;
-}
-
 .cormorant-infant-light {
-    font-family: ""Meow Script"", serif;
+    font-family: "Meow Script", serif;
     font-weight: 300;
     font-style: normal;
 }
@@ -105,12 +98,14 @@ p {
     font-style: normal;
     font-weight: normal;
     src: url('/fonts/BlackGold_Personal_use.woff') format('woff');
+    ascent-override: 90%;
+    descent-override: normal;
 }
 
 a {
     color: #2c3c23;
     position: relative;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .rsvp-link {
@@ -230,20 +225,20 @@ img.badge{
 }
 
 h1 {
-    font-size: clamp(1rem, -0.875rem + 7vw, 8.5rem);
-
+    font-size: clamp(1rem, -0.875rem + 7vw, 8rem);
+    margin: 0;
     text-transform: uppercase;
     font-weight: 1000;
     letter-spacing: 6px;
     text-align: center;
     font-family: BlackGold_Regular, serif;
+    line-height: 1em;
     color: #2c3c23;
 }
 
 h2 {
-    font-size: clamp(1rem, -0.875rem + 8vw, 8rem);
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
+    font-size: clamp(1rem, -0.875rem + 5vw, 5.5rem);
+    margin: 0;
     text-transform: none;
     letter-spacing: 4px;
     font-weight: 1200;
@@ -253,22 +248,33 @@ h2 {
 }
 
 h3 {
-    font-size: clamp(1rem, -0.875rem + 8vw, 10rem);
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
+    font-size: clamp(1rem, -0.875rem + 6vw, 7rem);
+    margin: 0;
     text-transform: none;
     letter-spacing: 4px;
     font-weight: 1000;
     font-family: BlackGold_Regular, serif;
-    line-height: 1em;
+    line-height: 1.5em;
     color: #f2f2f2;
     text-align: center;
 }
 
+h4 {
+    font-size: clamp(.5rem, -0.875rem + 5vw, 6rem);
+    text-transform: uppercase;
+    font-weight: 1000;
+    margin: 0;
+    letter-spacing: 6px;
+    line-height: 1.5em;
+    text-align: center;
+    font-family: BlackGold_Regular, serif;
+    color: #2c3c23;
+}
+
 p {
-    font-size: clamp(1rem, -0.875rem + 5vw, 4rem);
-    margin-top: 1em;
-    margin-bottom: 0;
+    font-size: clamp(.5rem, -0.375rem + 3vw, 3rem);
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
     text-transform: none;
     letter-spacing: 1px;
     font-weight: 200;
@@ -279,8 +285,6 @@ p {
 
 p.accent {
     font-size: clamp(1rem, -0.1rem + 3vw, 3rem);
-    margin-top: 1em;
-    margin-bottom: 0;
     text-transform: none;
     letter-spacing: 4px;
     font-weight: 700;
@@ -314,21 +318,56 @@ p.footer {
     text-align: center;
 }
 
-.wrapper--travel {
-    padding: 1vw;
-    display:grid;
-}
-
 .wrapper {
     padding: 1vw;
-    grid-gap: 1vw;
     display:grid;
+    grid-gap: 5px;
+    grid-template-columns:1fr;
+    grid-template-areas:
+        "box1"
+        "box2"
+        "box3"
+        "box4";
 }
 
-.travel-container {
+.grid--A{
+    padding: 1vw;
+    display:grid;
+    grid-gap: 5px;
+    grid-template-columns:1fr;
+    grid-template-areas:
+        "box1"
+        "box2";
+}
+
+.grid--B{
+    padding: 1vw;
+    display:grid;
+    grid-gap: 5px;
+    grid-template-columns:1fr;
+    grid-template-areas:
+        "box1"
+        "box2"
+        "box3"
+        "box4";
+}
+
+.grid--C{
+    padding: 1vw;
+    display:grid;
+    grid-gap: 5px;
+    grid-template-columns:1fr;
+    grid-template-areas:
+        "box1"
+        "box2"
+        "box3"
+        "box4";
+}
+
+.grid--travel {
+    padding: 1vw;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    width: 100%;
 }
 
 .box{
@@ -336,7 +375,7 @@ p.footer {
     line-height: 1em;
     font-weight: 200;
     text-align: left;
-    padding: .5em;
+    padding: 1em;
     border-radius: 1em;
     background-color: rgba(163, 186, 139, 0.8);
 }
@@ -378,8 +417,28 @@ p.footer {
     background-position: center bottom;
 }
 
+.background-image--maps {
+    background-image: url("../img/maps.jpg");
+    opacity: 75%;
+    background-position: center top;
+    min-height: 10vh;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.background-image--gifts {
+    background-image: url("../img/gifts.jpg");
+    opacity: 75%;
+    background-size: cover;
+    background-position: center center;
+    min-height: 10vh;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
 .box1 {
     margin: 0;
+    line-height: 4em;
 }
 
 .box2 {
@@ -395,17 +454,82 @@ p.footer {
     margin: 0;
 }
 
+.box3--grid_B{
+    border-radius: 0;
+}
+
+.box4--grid_B{
+    border-radius: 0 0 1em 1em;
+}
+
+.box--middle{
+    border-radius: 0;
+}
+
+.box--first{
+    border-radius: 1em 1em 0 0;
+}
+
+.box--last{
+    border-radius: 0 0 1em 1em;
+}
+
 @media (min-width: 768px)  {
 
     .wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.25fr .25fr .25fr;
-        grid-gap: .5em;
         grid-template-areas:
             "box1 box1"
             "box2 box3"
             "box4 box4";
+    }
+
+    .grid--A {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "box1"
+            "box2";
+    }
+
+    .grid--B{
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "box1 box1 box1"
+        "box2 box2 box2"
+        "box3 box4 box4";
+    }
+
+    .grid--C{
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "box1 box1"
+        "box2 box2"
+        "box3 box4";
+    }
+
+    .box3--grid_B{
+        border-radius: 0 0 0 1em;
+    }
+
+    .box4--grid_B{
+        border-radius: 0 0 1em 0;
+    }
+
+    .box--middle{
+        border-radius: 0;
+    }
+
+    .box--first{
+        border-radius: 1em 1em 0 0;
+    }
+
+    .box--last{
+        border-radius: 0 0 1em 1em;
     }
 
     .box1 { grid-area: box1; }
@@ -485,11 +609,44 @@ and (orientation: landscape) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.25fr .25fr .25fr;
-        grid-gap: .5em;
         grid-template-areas:
             "box1 box1"
             "box2 box3"
             "box4 box4";
+    }
+
+    .grid--A {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "box1"
+            "box2";
+    }
+
+    .grid--B{
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "box1 box1 box1"
+        "box2 box2 box2"
+        "box3 box4 box4";
+    }
+
+    .grid--C{
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "box1 box1"
+        "box2 box2"
+        "box3 box4";
+    }
+
+    .box3--grid_B{
+        border-radius: 0 0 0 1em;
+    }
+
+    .box4--grid_B{
+        border-radius: 0 0 1em 0;
     }
 
     .box1 { grid-area: box1; }
