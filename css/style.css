@@ -7,85 +7,13 @@ body, html {
 }
 
 body {
-    background-color: #97a579;
+    background-color: #6c7755;
     margin: 0;
     padding: 0;
 }
 
 div {
     padding:0;
-}
-
-.cormorant-infant-light {
-    font-family: "Meow Script", serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.cormorant-infant-regular {
-    font-family: "Cormorant Infant", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.cormorant-infant-medium {
-    font-family: "Cormorant Infant", serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.cormorant-infant-semibold {
-    font-family: "Cormorant Infant", serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-.cormorant-infant-bold {
-    font-family: "Cormorant Infant", serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.cormorant-infant-light-italic {
-    font-family: "Cormorant Infant", serif;
-    font-weight: 300;
-    font-style: italic;
-}
-
-.cormorant-infant-regular-italic {
-    font-family: "Cormorant Infant", serif;
-    font-weight: 400;
-    font-style: italic;
-}
-
-.cormorant-infant-medium-italic {
-    font-family: "Cormorant Infant", serif;
-    font-weight: 500;
-    font-style: italic;
-}
-
-.cormorant-infant-semibold-italic {
-    font-family: "Cormorant Infant", serif;
-    font-weight: 600;
-    font-style: italic;
-}
-
-.cormorant-infant-bold-italic {
-    font-family: "Cormorant Infant", serif;
-    font-weight: 700;
-    font-style: italic;
-}
-
-.windsong-regular {
-    font-family: "WindSong", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.windsong-medium {
-    font-family: "WindSong", cursive;
-    font-weight: 500;
-    font-style: normal;
 }
 
 .bonheur-royale-regular {
@@ -364,6 +292,17 @@ p.footer {
         "box4";
 }
 
+.grid--3vert{
+    padding: 1vw;
+    display:grid;
+    grid-gap: 5px;
+    grid-template-columns:1fr;
+    grid-template-areas:
+        "box1"
+        "box2"
+        "box3";
+}
+
 .grid--travel {
     padding: 1vw;
     display: grid;
@@ -377,7 +316,7 @@ p.footer {
     text-align: left;
     padding: .9em;
     border-radius: 1em;
-    background-color: rgba(163, 186, 139, 0.8);
+    background-color: rgba(163, 186, 139, 0.5);
 }
 
 .citypic{
@@ -436,6 +375,15 @@ p.footer {
     border-bottom-right-radius: 0;
 }
 
+.background-image--cabins {
+    background-image: url("../img/cabin2.jpg");
+    opacity: 75%;
+    background-size: cover;
+    background-position: 50% 75%;
+    min-height: 15vh;
+;
+}
+
 .box1 {
     margin: 0;
     line-height: 4em;
@@ -476,6 +424,10 @@ p.footer {
 
 @media (min-width: 768px)  {
 
+    .content {
+        max-width: 85vw;
+    }
+
     .wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -484,6 +436,13 @@ p.footer {
             "box1 box1"
             "box2 box3"
             "box4 box4";
+        width: 90%;
+        margin: auto;
+    }
+
+    .grid--travel {
+        width: 90%;
+        margin: auto;
     }
 
     .grid--A {
@@ -492,6 +451,8 @@ p.footer {
         grid-template-areas:
             "box1"
             "box2";
+        width: 90%;
+        margin:auto;
     }
 
     .grid--B{
@@ -501,6 +462,8 @@ p.footer {
         "box1 box1 box1"
         "box2 box2 box2"
         "box3 box4 box4";
+        width: 90%;
+        margin: auto;
     }
 
     .grid--C{
@@ -510,6 +473,13 @@ p.footer {
         "box1 box1"
         "box2 box2"
         "box3 box4";
+        width: 90%;
+        margin: auto;
+    }
+
+    .grid--3vert{
+        width: 90%;
+        margin: auto;
     }
 
     .box3--grid_B{
@@ -574,6 +544,11 @@ p.footer {
 
     img.icon{
         width: 70%;
+    }
+
+    img.down-arrow{
+        top: 85%;
+        width: 10vh
     }
 
     .jarallax-wrapper-tall {
