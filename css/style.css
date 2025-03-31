@@ -248,6 +248,7 @@ p.footer {
 
 .wrapper {
     padding: 1vw;
+    width: 98%;
     display:grid;
     grid-gap: 5px;
     grid-template-columns:1fr;
@@ -425,7 +426,7 @@ p.footer {
 @media (min-width: 768px)  {
 
     .content {
-        max-width: 85vw;
+        max-width: 95vw;
     }
 
     .wrapper {
@@ -436,13 +437,13 @@ p.footer {
             "box1 box1"
             "box2 box3"
             "box4 box4";
-        width: 90%;
+        width: 95%;
         margin: auto;
     }
 
     .grid--travel {
-        width: 90%;
         margin: auto;
+        width:95%
     }
 
     .grid--A {
@@ -451,8 +452,8 @@ p.footer {
         grid-template-areas:
             "box1"
             "box2";
-        width: 90%;
         margin:auto;
+        width:95%;
     }
 
     .grid--B{
@@ -462,8 +463,8 @@ p.footer {
         "box1 box1 box1"
         "box2 box2 box2"
         "box3 box4 box4";
-        width: 90%;
         margin: auto;
+        width:95%;
     }
 
     .grid--C{
@@ -473,13 +474,13 @@ p.footer {
         "box1 box1"
         "box2 box2"
         "box3 box4";
-        width: 90%;
         margin: auto;
+        width:95%;
     }
 
     .grid--3vert{
-        width: 90%;
         margin: auto;
+        width:95%;
     }
 
     .box3--grid_B{
@@ -582,6 +583,7 @@ and (orientation: landscape) {
 
     .wrapper {
         display: grid;
+        width:95%;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.25fr .25fr .25fr;
         grid-template-areas:
