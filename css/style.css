@@ -305,9 +305,17 @@ p.footer {
 }
 
 .grid--travel {
-    padding: 1vw;
+    padding: 0;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--FAQ {
+    padding: 1vw;
+    display:grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: minmax(100px, auto);
 }
 
 .box{
@@ -382,7 +390,14 @@ p.footer {
     background-size: cover;
     background-position: 50% 75%;
     min-height: 15vh;
-;
+}
+
+.background-image--faq {
+    background-image: url("../img/cai.jpg");
+    opacity: 75%;
+    background-size: cover;
+    background-position: center 35%;
+    min-height: 15vh;
 }
 
 .box1 {
@@ -422,6 +437,11 @@ p.footer {
 .box--last{
     border-radius: 0 0 1em 1em;
 }
+
+.faq {
+    grid-column: 1 / -1;
+}
+
 
 @media (min-width: 768px)  {
 
@@ -479,6 +499,11 @@ p.footer {
     }
 
     .grid--3vert{
+        margin: auto;
+        width:95%;
+    }
+
+    .grid--FAQ{
         margin: auto;
         width:95%;
     }
@@ -598,6 +623,7 @@ and (orientation: landscape) {
         grid-template-areas:
             "box1"
             "box2";
+        width:95%;
     }
 
     .grid--B{
@@ -607,6 +633,7 @@ and (orientation: landscape) {
         "box1 box1 box1"
         "box2 box2 box2"
         "box3 box4 box4";
+        width:95%;
     }
 
     .grid--C{
@@ -616,6 +643,18 @@ and (orientation: landscape) {
         "box1 box1"
         "box2 box2"
         "box3 box4";
+        width:95%;
+    }
+
+    .grid--FAQ{
+        margin: auto;
+        width:95%;
+    }
+
+    .grid--travel{
+        margin: auto;
+        width:95%;
+        padding:0;
     }
 
     .box3--grid_B{
